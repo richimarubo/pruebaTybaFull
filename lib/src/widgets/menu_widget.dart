@@ -42,7 +42,6 @@ class MenuWidget extends StatelessWidget {
               leading: Icon( Icons.people, color: Color(0xFF43028e), ),
               title: Text('Ingresar / Registrarse'),
               onTap: (){
-                Navigator.pop(context);
                 Navigator.pushReplacementNamed(context, LoginPage.routeName);
               },
             ),
@@ -60,7 +59,6 @@ class MenuWidget extends StatelessWidget {
                 _prefs.email = '';
                 _prefs.token = '';
                 _prefs.ultimaPagina = LoginPage.routeName;
-                Navigator.pop(context);
                 Navigator.pushReplacementNamed(context, LoginPage.routeName);
               }
             ),
